@@ -1,4 +1,14 @@
 import React, { useState } from "react";
+import Logo from '../assets/images/logo.svg'
+import telemobile from '../assets/icon/telephonmobilee.svg'
+import facebookmobile from '../assets/icon/facebookmobile.svg'
+import whatsappmobile from '../assets/icon/whatsappmobile.svg'
+import Phone from '../assets/icon/Phone.svg'
+import Facebook from '../assets/icon/Facebook.svg'
+import whatsapp from '../assets/icon/whatsapp.svg'
+import close from '../assets/icon/close.svg'
+import menu from '../assets/icon/menu.svg'
+
 export const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
@@ -20,13 +30,13 @@ export const Navbar = () => {
         </ul>
         <ul className="flex justify-center items-center mt-[64px]">
             <li className="ml-[24px]">
-              <img src="/src/assets/icon/telephonmobilee.svg" alt="Phone" />
+              <img src={telemobile} alt="Phone" />
             </li>
             <li className="ml-[24px]">
-              <img src="/src/assets/icon/facebookmobile.svg" alt="Facebook" />
+              <img src={facebookmobile} alt="Facebook" />
             </li>
             <li>
-              <img src="/src/assets/icon/whatsappmobile.svg" alt="whatsapp" />
+              <img src={whatsappmobile} alt="whatsapp" />
             </li>
           </ul>
       </div>
@@ -37,7 +47,7 @@ export const Navbar = () => {
       <nav>
         <div className="flex justify-between items-center border-b-2 border-[#4E4097] py-[12px] relative">
           <img
-            src="/src/assets/images/logo.svg"
+            src={Logo}
             alt="logo"
             className="w-[158px] h-[34.652px] lg:w-[272.218px] lg:h-[59.347px]"
           />
@@ -51,13 +61,13 @@ export const Navbar = () => {
 
           <ul className="hidden md:flex">
             <li className="ml-[24px]">
-              <img src="/src/assets/icon/Phone.svg" alt="Phone" />
+              <img src={Phone} alt="Phone" />
             </li>
             <li className="ml-[24px]">
-              <img src="/src/assets/icon/Facebook.svg" alt="Facebook" />
+              <img src={Facebook} alt="Facebook" />
             </li>
             <li>
-              <img src="/src/assets/icon/whatsapp.svg" alt="whatsapp" />
+              <img src={whatsapp} alt="whatsapp" />
             </li>
           </ul>
 
@@ -67,9 +77,9 @@ export const Navbar = () => {
             onClick={handleClick}
           >
             {click ? (
-              <img src="/src/assets/icon/close.svg" />
+              <img src={close} />
             ) : (
-              <img src="/src/assets/icon/menu.svg" />
+              <img src={menu} />
             )}
           </button>
         </div>

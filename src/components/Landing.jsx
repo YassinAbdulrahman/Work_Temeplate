@@ -1,5 +1,5 @@
 import React from "react";
-
+import LandingImg from '../assets/images/landing.svg' 
 const Landing = () => {
   return (
     <div className="container flex flex-col-reverse justify-between items-center lg:flex-row mt-[61px] ">
@@ -15,7 +15,7 @@ const Landing = () => {
         </button>
       </div>
       <div className="w-full mb-[48px]">
-        <img src="/src/assets/images/landing.svg" alt="landing" className="w-full object-fill"/>
+        <img src={LandingImg} alt="landing" className="w-full object-fill"/>
       </div>
     </div>
   );
