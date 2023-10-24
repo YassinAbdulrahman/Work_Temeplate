@@ -5,6 +5,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useState } from "react";
 import "../slider.css"
+import feedbackImg from "../assets/images/feedbackname.svg"
+
 function Feedback() {
   const [items, setItems] = useState([
     {
@@ -96,7 +98,7 @@ function Feedback() {
               </p>
               <div className="flex items-center gap-[8px]">
                 <img
-                  src={`assets/icon/${items.icon}`}
+                  src={feedbackImg}
                   alt="feedbackname"
                   className="object-contain w-[48px] lg:w-[60px]"
                 />
