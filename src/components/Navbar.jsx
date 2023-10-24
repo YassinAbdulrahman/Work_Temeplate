@@ -17,7 +17,7 @@ export const Navbar = () => {
       <div className="lg:hidden block absolute top-0 h-full w-full left-0 right-0 bg-purple transition pt-[16px] px-[20px]">
         <div className="h-[8vh]">
           <img
-            src="/src/assets/images/navmobile.svg"
+            src="../assets/images/navmobile.svg"
             alt="logo"
             className="w-[158px] h-[34.652px] my-auto"
           />
