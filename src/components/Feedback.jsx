@@ -96,7 +96,7 @@ function Feedback() {
               </p>
               <div className="flex items-center gap-[8px]">
                 <img
-                  src={`../../src/assets/icon/${items.icon}`}
+                  src={`./src/assets/icon/${items.icon}`}
                   alt="feedbackname"
                   className="object-contain w-[48px] lg:w-[60px]"
                 />
