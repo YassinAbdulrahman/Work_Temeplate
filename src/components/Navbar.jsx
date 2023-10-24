@@ -52,14 +52,14 @@ export const Navbar = () => {
             className="w-[158px] h-[34.652px] lg:w-[272.218px] lg:h-[59.347px]"
           />
 
-          <ul className="hidden md:flex text-[24px] font-normal text-gray">
+          <ul className="hidden lg:flex text-[24px] font-normal text-gray">
             <li className="ml-[64px]">عننا</li>
             <li className="ml-[64px]">خدمات الاكاديمية</li>
             <li className="ml-[64px]">اراء العملاء</li>
             <li>تواصل معنا</li>
           </ul>
 
-          <ul className="hidden md:flex">
+          <ul className="hidden lg:flex">
             <li className="ml-[24px]">
               <img src={Phone} alt="Phone" />
             </li>
@@ -73,7 +73,7 @@ export const Navbar = () => {
 
           {/* Humbrger Menu */}
           <button
-            className="block sm:hidden transtion z-50"
+            className="block lg:hidden transtion z-50"
             onClick={handleClick}
           >
             {click ? (
