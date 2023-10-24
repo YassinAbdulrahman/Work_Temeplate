@@ -8,7 +8,7 @@ import Facebook from '../assets/icon/Facebook.svg'
 import whatsapp from '../assets/icon/whatsapp.svg'
 import close from '../assets/icon/close.svg'
 import menu from '../assets/icon/menu.svg'
-
+import logomobile from '../assets/images/navmobile.svg'
 export const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
@@ -17,7 +17,7 @@ export const Navbar = () => {
       <div className="lg:hidden block absolute top-0 h-full w-full left-0 right-0 bg-purple transition pt-[16px] px-[20px]">
         <div className="h-[8vh]">
           <img
-            src="../assets/images/navmobile.svg"
+            src={logomobile}
             alt="logo"
             className="w-[158px] h-[34.652px] my-auto"
           />
