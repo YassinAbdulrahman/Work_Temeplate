@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+}
+.swiperslide{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 350px !important;
+}
+.swiper .slide {
+  border-radius: 10px;
+  border: 1px solid #edf0f5;
+  background: linear-gradient(180deg, #fff 0.23%, #fff 0.23%, #f6f4ff 109.22%);
+  height: fit-content;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #574b9a, #574b9a);
+  border-radius: 3px;
+}
+.boxServices {
+  border: 1px solid #edf0f5;
+  background: linear-gradient(180deg, #fff 0.23%, #fff 0.23%, #f6f4ff 109.22%);
+}
+.contactus {
+  border-radius: 10px;
+  border: 1px solid #edf0f5;
+  background: linear-gradient(180deg, #fff 0.23%, #fff 0.23%, #f6f4ff 109.22%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+body {
+  font-family: "Almarai", sans-serif;
+}

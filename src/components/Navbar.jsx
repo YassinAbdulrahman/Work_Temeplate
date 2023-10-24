@@ -1,0 +1,80 @@
+import React, { useState } from "react";
+export const Navbar = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const content = (
+    <>
+      <div className="lg:hidden block absolute top-0 h-full w-full left-0 right-0 bg-purple transition pt-[16px] px-[20px]">
+        <div className="h-[8vh]">
+          <img
+            src="/src/assets/images/navmobile.svg"
+            alt="logo"
+            className="w-[158px] h-[34.652px] my-auto"
+          />
+        </div>
+        <ul className="flex flex-col text-[24px] font-bold text-greenlight mt-[32px] text-center">
+          <li className="mb-[32px]">عننا</li>
+          <li className="mb-[32px]">خدمات الاكاديمية</li>
+          <li className="mb-[32px]">اراء العملاء</li>
+          <li>تواصل معنا</li>
+        </ul>
+        <ul className="flex justify-center items-center mt-[64px]">
+            <li className="ml-[24px]">
+              <img src="/src/assets/icon/telephonmobilee.svg" alt="Phone" />
+            </li>
+            <li className="ml-[24px]">
+              <img src="/src/assets/icon/facebookmobile.svg" alt="Facebook" />
+            </li>
+            <li>
+              <img src="/src/assets/icon/whatsappmobile.svg" alt="whatsapp" />
+            </li>
+          </ul>
+      </div>
+    </>
+  );
+  return (
+    <header className="container">
+      <nav>
+        <div className="flex justify-between items-center border-b-2 border-[#4E4097] py-[12px] relative">
+          <img
+            src="/src/assets/images/logo.svg"
+            alt="logo"
+            className="w-[158px] h-[34.652px] lg:w-[272.218px] lg:h-[59.347px]"
+          />
+
+          <ul className="hidden md:flex text-[24px] font-normal text-gray">
+            <li className="ml-[64px]">عننا</li>
+            <li className="ml-[64px]">خدمات الاكاديمية</li>
+            <li className="ml-[64px]">اراء العملاء</li>
+            <li>تواصل معنا</li>
+          </ul>
+
+          <ul className="hidden md:flex">
+            <li className="ml-[24px]">
+              <img src="/src/assets/icon/Phone.svg" alt="Phone" />
+            </li>
+            <li className="ml-[24px]">
+              <img src="/src/assets/icon/Facebook.svg" alt="Facebook" />
+            </li>
+            <li>
+              <img src="/src/assets/icon/whatsapp.svg" alt="whatsapp" />
+            </li>
+          </ul>
+
+          {/* Humbrger Menu */}
+          <button
+            className="block sm:hidden transtion z-50"
+            onClick={handleClick}
+          >
+            {click ? (
+              <img src="/src/assets/icon/close.svg" />
+            ) : (
+              <img src="/src/assets/icon/menu.svg" />
+            )}
+          </button>
+        </div>
+        <div>{click && content}</div>
+      </nav>
+    </header>
+  );
+};
